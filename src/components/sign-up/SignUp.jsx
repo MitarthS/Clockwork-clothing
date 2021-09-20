@@ -25,7 +25,7 @@ export default class SignUp extends Component {
             const {user} = await auth.createUserWithEmailAndPassword(email, password);
             await createUserProfileDocument(user, {displayName});
             this.setState({
-                displayName: '',
+            displayName: '',
             email: '',
             password: '',
             confirmPassword: ''
